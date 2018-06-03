@@ -84,6 +84,7 @@ header nav ul.mrw-navigation li:last-child a {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: rgba(0,0,0,.3);
@@ -92,6 +93,22 @@ header nav ul.mrw-navigation li:last-child a {
 .mrw-main-banner {
   display: block;
   width: 100%;
+}
+
+.mrw-header-text .mrw-arrow {
+  display: inline-block;
+  border: solid #fff;
+  padding: 20px;
+  border-width: 0 3px 3px 0;
+  cursor: pointer;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.mrw-header-text .mrw-arrow:hover {
+  opacity: .7;
 }
 
 /*Logo*/
