@@ -16,6 +16,13 @@ h1 {
   font-weight: lighter;
 }
 
+h3 {
+  width: 100%;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: center;
+}
+
 .mrw-container {
   display: flex;
   flex-wrap: wrap;
@@ -123,6 +130,20 @@ header nav ul.mrw-navigation li:last-child a {
   font-size: 26px;
   border: solid 2px #fff;
   border-radius: 30%;
+}
+
+/*Sections*/
+
+.mrw-section {
+  padding: 85px 0;
+}
+
+/*About us*/
+
+#mrw-about .mrw-column {
+  width: 48%;
+  margin-top: 25px;
+  text-align: center;
 }
 
 /*Animations*/
