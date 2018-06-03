@@ -48,6 +48,26 @@ header nav ul.mrw-navigation li a {
   text-transform: uppercase;
 }
 
+header nav ul.mrw-navigation li a:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  background-color: #fff;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+header nav ul.mrw-navigation li a:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+header nav ul.mrw-navigation li:last-child a {
+  padding-right: 0;
+}
+
 .mrw-main-banner {
   display: block;
   width: 100%;
