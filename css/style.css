@@ -163,6 +163,28 @@ header nav ul.mrw-navigation li:last-child a {
   color: #31651c;
 }
 
+/*Gallery*/
+
+#mrw-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#mrw-gallery li {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#mrw-gallery li img {
+  display: block;
+  width: 100%;
+}
+
 /*Animations*/
 
 .mrw-pulsate {
