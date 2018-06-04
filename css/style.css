@@ -218,6 +218,7 @@ header nav ul.mrw-navigation li:last-child a {
 }
 
 .mrv-testimonials {
+  position: relative;
   max-width: 500px;
 }
 
@@ -250,6 +251,34 @@ header nav ul.mrw-navigation li:last-child a {
   font-size: 20px;
   color: #ccc;
   text-align: center;
+}
+
+.mrv-testimonials .mrw-arrow {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  border: solid #eee;
+  padding: 20px;
+  border-width: 0 3px 3px 0;
+  cursor: pointer;
+  -webkit-transition: border-color .3s ease;
+  transition: border-color .3s ease;
+}
+
+.mrv-testimonials .mrw-arrow.mrw-arrow-left {
+  right: 120%;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.mrv-testimonials .mrw-arrow.mrw-arrow-right {
+  left: 120%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.mrv-testimonials .mrw-arrow:hover {
+  border-color: #31651c;
 }
 
 /*Animations*/
