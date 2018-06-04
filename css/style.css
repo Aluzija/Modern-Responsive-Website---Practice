@@ -183,6 +183,73 @@ header nav ul.mrw-navigation li:last-child a {
 #mrw-gallery li img {
   display: block;
   width: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#mrw-gallery li:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#mrw-gallery li:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.4);
+}
+
+#mrw-gallery li:hover:after {
+  width: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/*Testimonials*/
+
+#mrv-testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mrv-testimonials {
+  max-width: 500px;
+}
+
+.mrv-testimonials ul {
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  list-style-type: none;
+}
+
+.mrv-testimonials ul li {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mrv-testimonials ul li .mrw-user-data img {
+  border-radius: 100%;
+}
+
+.mrv-testimonials ul li .mrw-user-name {
+  display: block;
+  margin: 15px 0;
+}
+
+.mrv-testimonials ul li > p {
+  font-style: italic;
+  font-size: 20px;
+  color: #ccc;
+  text-align: center;
 }
 
 /*Animations*/
