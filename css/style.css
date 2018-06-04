@@ -281,6 +281,74 @@ header nav ul.mrw-navigation li:last-child a {
   border-color: #31651c;
 }
 
+/*Contact*/
+
+#mrw-contact {
+  background: #f8f8f8;
+}
+
+#mrw-contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#mrw-contact form input:not([type="submit"]),
+#mrw-contact form textarea {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: solid 1px #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#mrw-contact form textarea {
+  height: 100px;
+  resize: none;
+}
+
+#mrw-contact form *::-webkit-input-placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+#mrw-contact form *::-moz-placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+#mrw-contact form *:-ms-input-placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+#mrw-contact form *:-moz-input-placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+#mrw-contact input[type="submit"] {
+  border: none;
+  padding: 10px 30px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #31651c;
+  font-size: 16px;
+  text-transform: uppercase;
+  box-shadow: inset 0 -3px 0 0 #20540b;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#mrw-contact input[type="submit"]:hover {
+  box-shadow: inset 0 -3px 0 0 #31651c;
+  background-color: #20540b;
+
 /*Animations*/
 
 .mrw-pulsate {
