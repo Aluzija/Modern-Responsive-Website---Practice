@@ -1,3 +1,7 @@
+/*Fonts*/
+
+@import 'fonts.css';
+
 /*General styles*/
 
 body {
@@ -8,6 +12,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
 }
 
 h1 {
@@ -21,6 +29,10 @@ h3 {
   margin-top: 0;
   font-size: 40px;
   text-align: center;
+}
+
+h3:first-letter {
+  color: #31651c;
 }
 
 .mrw-container {
@@ -144,6 +156,11 @@ header nav ul.mrw-navigation li:last-child a {
   width: 48%;
   margin-top: 25px;
   text-align: center;
+}
+
+#mrw-about i {
+  font-size: 45px;
+  color: #31651c;
 }
 
 /*Animations*/
