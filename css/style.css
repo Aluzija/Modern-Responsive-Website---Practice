@@ -211,7 +211,7 @@ header nav ul.mrw-navigation li:last-child a {
 
 /*Testimonials*/
 
-#mrv-testimonials {
+#mrw-testimonials {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,7 +257,7 @@ header nav ul.mrw-navigation li:last-child a {
   position: absolute;
   top: 50%;
   display: inline-block;
-  border: solid #eee;
+  border: solid #dcdcdc;
   padding: 20px;
   border-width: 0 3px 3px 0;
   cursor: pointer;
@@ -348,7 +348,41 @@ header nav ul.mrw-navigation li:last-child a {
 #mrw-contact input[type="submit"]:hover {
   box-shadow: inset 0 -3px 0 0 #31651c;
   background-color: #20540b;
+}
 
+/*Footer*/
+
+footer {
+  background-color: #444;
+  padding: 5px 0;
+}
+
+footer .mrw-logo {
+  width: 80px;
+  height: 40px;
+  font-size: 18px;
+}
+
+footer .mrw-social-icons {
+  display: flex;
+  list-style-type: none;
+}
+
+footer .mrw-social-icons li {
+  margin-left: 15px;
+}
+
+footer .mrw-social-icons li a {
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+footer .mrw-social-icons li a:hover {
+  opacity: .7;
+}
 /*Animations*/
 
 .mrw-pulsate {
