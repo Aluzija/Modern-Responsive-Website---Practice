@@ -42,9 +42,27 @@
     })
   }
 
+  const onTestimonialsChange = () => {
+    let firstChild, lastChild;
+    const prevArrow = document.querySelector("#mrw-testimonials-prev");
+    const nextArrow = document.querySelector("#mrw-testimonials-next");
+    const testimonials = document.querySelector(".mrv-testimonials ul");
+
+    document.addEventListener("click", () => {
+      if(event.target === prevArrow) {
+        lastChild = testimonials.lastElementChild;
+        testimonials.insertAdjacentElement("afterbegin", lastChild);
+      } else if(event.target === nextArrow) {
+        firstChild = testimonials.firstElementChild;
+        testimonials.insertAdjacentElement("beforeend", firstChild);
+      }
+    })
+  }
+
   window.addEventListener("scroll", () => {
     addMenuBackground();
   })
 
   onNavItemClick();
+  onTestimonialsChange();
 })();
