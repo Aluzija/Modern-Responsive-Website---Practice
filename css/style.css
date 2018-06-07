@@ -478,3 +478,14 @@ footer .mrw-social-icons li a:hover {
   }
 
 }
+
+@media all and (max-width: 680px) {
+
+  header nav {
+    position: absolute;
+  }
+
+  header nav.mrw-nav-fixed {
+    background: none;
+  }
+}

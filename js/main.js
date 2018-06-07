@@ -11,6 +11,19 @@
     }
   }
 
+  const reorderResponsiveMenu = () => {
+    const pageWidth = window.innerWidth;
+    const navContainer = document.querySelector("header nav .mrw-container");
+    const navigation = document.querySelector("header nav .mrw-navigation");
+    const mobileNavigation = document.querySelector("body > .mrw-navigation");
+
+    if(pageWidth <= mobileWidth && navigation) {
+      document.body.insertAdjacentElement("afterbegin", navigation);
+    } else if (pageWidth > mobileWidth && mobileNavigation) {
+      navContainer.insertAdjacentElement("beforeend", mobileNavigation);
+    }
+  }
+
   const onNavItemClick = () => {
     const navItemList = document.querySelectorAll(".mrw-section-link");
     const navItems = [...navItemList];
@@ -91,7 +104,12 @@
     addMenuBackground();
   })
 
+  window.addEventListener("resize", () => {
+    reorderResponsiveMenu();
+  })
+
   onNavItemClick();
   onTestimonialsChange();
   onGalleryImageClick();
+  reorderResponsiveMenu();
 })();
