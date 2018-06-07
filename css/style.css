@@ -479,6 +479,23 @@ footer .mrw-social-icons li a:hover {
 
 }
 
+@media all and (max-width: 750px) {
+
+  header nav ul.mrw-navigation li a {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .mrv-testimonials .mrw-arrow,
+  .mrw-header-text .mrw-arrow {
+    padding: 10px;
+  }
+
+}
+
 @media all and (max-width: 680px) {
 
   header nav {
