@@ -59,10 +59,39 @@
     })
   }
 
+  const onGalleryImageClick = () => {
+    const galleryImageList = document.querySelectorAll("#mrw-gallery li");
+    const galleryImages = [...galleryImageList];
+
+    galleryImages.forEach(image => {
+      image.addEventListener("click", event => {
+        galleryImageOpen(event.target);
+      })
+    })
+  }
+
+  const galleryImageOpen = image => {
+    const imageSrc = image.getAttribute("src");
+    const openedImage = `<div class='mrw-backdrop'><img src='${imageSrc}' alt='' />
+                         <span class='mrw-backdrop-close'>X</span></div>`
+    document.body.insertAdjacentHTML("beforeend", openedImage);
+    galleryImageClose();
+  }
+
+  const galleryImageClose = () => {
+    const closeButton = document.querySelector(".mrw-backdrop-close");
+
+    closeButton.addEventListener("click", () => {
+      const backdrop = document.querySelector(".mrw-backdrop");
+      backdrop.remove();
+    })
+  }
+
   window.addEventListener("scroll", () => {
     addMenuBackground();
   })
 
   onNavItemClick();
   onTestimonialsChange();
+  onGalleryImageClick();
 })();
