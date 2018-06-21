@@ -105,6 +105,10 @@ header nav ul.mrw-navigation li:last-child a {
   padding-right: 0;
 }
 
+header nav .mrw-nav-toggle {
+  display: none;
+}
+
 .mrw-header-text {
   position: absolute;
   width: 100%;
@@ -504,5 +508,48 @@ footer .mrw-social-icons li a:hover {
 
   header nav.mrw-nav-fixed {
     background: none;
+  }
+
+  ul.mrw-navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    background: rgba(0,0,0,.7);
+    -webkit-transition: max-height .4s ease;
+    transition: max-height .4s ease;
+  }
+
+  ul.mrw-navigation.mrw-navigation-opened {
+    max-height: 500px;
+    -webkit-transition: max-height 1s ease;
+    transition: max-height 1s ease;
+  }
+
+  ul.mrw-navigation li {
+    padding: 0 15px;
+  }
+
+  ul.mrw-navigation li a {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    border-bottom: solid 1px #999;
+  }
+
+  ul.mrw-navigation li:last-child a {
+    border-bottom: none;
+    padding-bottom: 20px;
+  }
+
+  ul.mrw-navigation li:first-child a {
+    padding-top: 20px;
+  }
+
+  header nav .mrw-nav-toggle {
+    display: block;
+    color: #fff;
+    font-size: 25px;
   }
 }
