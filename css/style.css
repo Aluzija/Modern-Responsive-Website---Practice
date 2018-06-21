@@ -553,3 +553,51 @@ footer .mrw-social-icons li a:hover {
     font-size: 25px;
   }
 }
+
+@media all and (max-width: 610px) {
+  .mrw-logo {
+    width: 70px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  h1, h3 {
+    font-size: 30px;
+  }
+
+  h1.mrw-pulsate {
+    margin-bottom: 10px;
+  }
+
+  .mrv-testimonials .mrw-arrow,
+  .mrw-header-text .mrw-arrow {
+    padding: 7px;
+    border-width: 0 2px 2px 0;
+  }
+
+  #mrw-about .mrw-column {
+    width: 100%;
+  }
+
+  #mrw-gallery li {
+    width: 33.33%;
+  }
+
+  #mrw-about i {
+    font-size: 35px;
+  }
+
+  .mrv-testimonials {
+    max-width: 75%;
+  }
+
+  .mrv-testimonials ul li > p {
+    font-size: 13px;
+  }
+
+  #mrw-contact form input:not([type="submit"]),
+  #mrw-contact form textarea {
+    width: 90%;
+    padding: 12px;;
+  }
+}
